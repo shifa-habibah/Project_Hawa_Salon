@@ -1,0 +1,351 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0BDB8530-0723-4260-9CB9-2EE262B650BB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>PROJECT_SALON_HAWA_KEL11</RootNamespace>
+    <AssemblyName>PROJECT_SALON_HAWA_KEL11</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MENUADMIN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MENUADMIN.Designer.cs">
+      <DependentUpon>MENUADMIN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetHawaSalon.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetHawaSalon.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MENUKASIR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MENUKASIR.Designer.cs">
+      <DependentUpon>MENUKASIR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LihatMember.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LihatMember.Designer.cs">
+      <DependentUpon>LihatMember.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LihatPakaian.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LihatPakaian.Designer.cs">
+      <DependentUpon>LihatPakaian.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LihatPaketLengkap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LihatPaketLengkap.Designer.cs">
+      <DependentUpon>LihatPaketLengkap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LihatPaketMakeUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LihatPaketMakeUp.Designer.cs">
+      <DependentUpon>LihatPaketMakeUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LihatPaketPengantin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LihatPaketPengantin.Designer.cs">
+      <DependentUpon>LihatPaketPengantin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LihatPegawai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LihatPegawai.Designer.cs">
+      <DependentUpon>LihatPegawai.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LihatPerawatanRambut.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LihatPerawatanRambut.Designer.cs">
+      <DependentUpon>LihatPerawatanRambut.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LihatPerawatanWajah.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LihatPerawatanWajah.Designer.cs">
+      <DependentUpon>LihatPerawatanWajah.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MAINPROJEK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MAINPROJEK.Designer.cs">
+      <DependentUpon>MAINPROJEK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MENUMANAJER.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MENUMANAJER.Designer.cs">
+      <DependentUpon>MENUMANAJER.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MENU.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MENU.Designer.cs">
+      <DependentUpon>MENU.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TambahMember.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TambahMember.Designer.cs">
+      <DependentUpon>TambahMember.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TambahPakaian.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TambahPakaian.Designer.cs">
+      <DependentUpon>TambahPakaian.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TambahPaketLengkap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TambahPaketLengkap.Designer.cs">
+      <DependentUpon>TambahPaketLengkap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TambahPaketMakeUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TambahPaketMakeUp.Designer.cs">
+      <DependentUpon>TambahPaketMakeUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TambahPaketPengantin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TambahPaketPengantin.Designer.cs">
+      <DependentUpon>TambahPaketPengantin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TambahPegawai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TambahPegawai.Designer.cs">
+      <DependentUpon>TambahPegawai.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TambahPerawatanRambut.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TambahPerawatanRambut.Designer.cs">
+      <DependentUpon>TambahPerawatanRambut.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TambahPerawatanWajah.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TambahPerawatanWajah.Designer.cs">
+      <DependentUpon>TambahPerawatanWajah.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UbahMember.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UbahMember.Designer.cs">
+      <DependentUpon>UbahMember.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UbahPakaian.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UbahPakaian.Designer.cs">
+      <DependentUpon>UbahPakaian.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UbahPaketLengkap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UbahPaketLengkap.Designer.cs">
+      <DependentUpon>UbahPaketLengkap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UbahPaketMakeUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UbahPaketMakeUp.Designer.cs">
+      <DependentUpon>UbahPaketMakeUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UbahPaketPengantin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UbahPaketPengantin.Designer.cs">
+      <DependentUpon>UbahPaketPengantin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UbahPegawai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UbahPegawai.Designer.cs">
+      <DependentUpon>UbahPegawai.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UbahPerawatanRambut.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UbahPerawatanRambut.Designer.cs">
+      <DependentUpon>UbahPerawatanRambut.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UbahPerawatanWajah.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UbahPerawatanWajah.Designer.cs">
+      <DependentUpon>UbahPerawatanWajah.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="MENUADMIN.resx">
+      <DependentUpon>MENUADMIN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MENUKASIR.resx">
+      <DependentUpon>MENUKASIR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LihatMember.resx">
+      <DependentUpon>LihatMember.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LihatPakaian.resx">
+      <DependentUpon>LihatPakaian.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LihatPaketLengkap.resx">
+      <DependentUpon>LihatPaketLengkap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LihatPaketMakeUp.resx">
+      <DependentUpon>LihatPaketMakeUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LihatPaketPengantin.resx">
+      <DependentUpon>LihatPaketPengantin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LihatPegawai.resx">
+      <DependentUpon>LihatPegawai.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LihatPerawatanRambut.resx">
+      <DependentUpon>LihatPerawatanRambut.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LihatPerawatanWajah.resx">
+      <DependentUpon>LihatPerawatanWajah.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MAINPROJEK.resx">
+      <DependentUpon>MAINPROJEK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MENUMANAJER.resx">
+      <DependentUpon>MENUMANAJER.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MENU.resx">
+      <DependentUpon>MENU.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="TambahMember.resx">
+      <DependentUpon>TambahMember.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TambahPakaian.resx">
+      <DependentUpon>TambahPakaian.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TambahPaketLengkap.resx">
+      <DependentUpon>TambahPaketLengkap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TambahPaketMakeUp.resx">
+      <DependentUpon>TambahPaketMakeUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TambahPaketPengantin.resx">
+      <DependentUpon>TambahPaketPengantin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TambahPegawai.resx">
+      <DependentUpon>TambahPegawai.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TambahPerawatanRambut.resx">
+      <DependentUpon>TambahPerawatanRambut.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TambahPerawatanWajah.resx">
+      <DependentUpon>TambahPerawatanWajah.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UbahMember.resx">
+      <DependentUpon>UbahMember.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UbahPakaian.resx">
+      <DependentUpon>UbahPakaian.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UbahPaketLengkap.resx">
+      <DependentUpon>UbahPaketLengkap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UbahPaketMakeUp.resx">
+      <DependentUpon>UbahPaketMakeUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UbahPaketPengantin.resx">
+      <DependentUpon>UbahPaketPengantin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UbahPegawai.resx">
+      <DependentUpon>UbahPegawai.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UbahPerawatanRambut.resx">
+      <DependentUpon>UbahPerawatanRambut.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UbahPerawatanWajah.resx">
+      <DependentUpon>UbahPerawatanWajah.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="DataSetHawaSalon.xsc">
+      <DependentUpon>DataSetHawaSalon.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetHawaSalon.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetHawaSalon.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetHawaSalon.xss">
+      <DependentUpon>DataSetHawaSalon.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
